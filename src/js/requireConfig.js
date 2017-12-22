@@ -21,8 +21,8 @@ require.config({
             deps: ['jquery', 'css!lib/bootstrap/bootstrap.css']
         },
         Mslider: {
-           d eps: ['css!component/slider/slider.css']
-        }ß
+           deps: ['css!component/slider/slider.css']
+        }
     },
     config: {
         text: {
