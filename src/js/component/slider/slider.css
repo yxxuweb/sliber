@@ -1,0 +1,46 @@
+/* 幻灯父容器 */
+.focus-wrap { position:relative; width:480px; }
+
+/* 幻灯容器 */
+.slider { width:480px; height:320px; overflow:hidden; }
+
+/* 幻灯箭头 */
+.arrow { position:absolute; top:50%; margin-top:-15px; width:30px; height:30px; background:url(arrows.png) no-repeat 0 0; z-index:20; }
+.arrow-left { left:10px; background-position:0 0; }
+.arrow-right { right:10px; background-position:-30px 0; }
+
+/* 幻灯小导航 */
+.promo-nav {
+    position:absolute;
+    bottom:6px;
+    right:10px;
+    height:13px;
+    line-height:9px;
+    text-align:center;
+    border-radius:10px;
+    z-index:22;
+    background:rgba(255, 255, 255, 0.3);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4CFFFFFF', EndColorStr='#4CFFFFFF');
+}
+.promo-nav ul li { float:left; vertical-align:middle; zoom:1; margin:2px 3px; }
+.promo-nav ul li a { font:0 a; text-indent:-9999px; display:block; width:9px; height:0; padding-top:9px; border-radius:50%; background:#B7B7B7; overflow:hidden; }
+
+/* 定义圆点的背景色 */
+.promo-nav ul li a.active { background:#F40; }
+
+/* 幻灯文字 */
+.slider-text {
+    position:absolute;
+    width:100%;
+    height:28px;
+    line-height:28px;
+    overflow:hidden;
+    bottom:0;
+    left:0;
+    background:#000;
+    background:rgba( 0, 0, 0, 0.5);
+    filter:alpha(opacity=50);
+    color:#FFF;
+    text-indent:1em;
+    z-index:12;
+}

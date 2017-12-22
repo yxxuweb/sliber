@@ -1,0 +1,1 @@
+define([],function(){return{myUtil:{isFunction:function(t){return"[object Function]"===Object.prototype.toString.call(t)}}}});
